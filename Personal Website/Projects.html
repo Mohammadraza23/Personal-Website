@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Raza Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/cc0204e73e.js"></script>
+
+</head>
+<body>
+    <section class="pr">
+        <nav>
+          
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+       
+            <h1>Take a look at some of the projects I've worked on</h1>
+
+
+
+    </section>
+
+
+    <!--Course-->
+
+    <section class="course">
+        <h1>Projects Created</h1>
+        <p>Displayed below are the projects I have worked on/created <br> 
+        over the course of my time at Carleton for Computer Science </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Rock Paper Scissors (Python)</h3>
+                <p>A fun little game created in python that takes user command line input and generating randomized output</p>
+                <a href="https://github.com/Mohammadraza23/Rock-Paper-Scissors">Check it Out</a> <!--Add github url link-->
+            </div>
+
+            <div class="course-col">
+                <h3>Inventory Tracking Device (JavaFX)</h3>
+                <p> An POS system created with JavaFX that tracks amount of inventory and sales.  </p>
+                <a href="https://github.com/Mohammadraza23/Inventory-Tracking-System/">Check it Out</a> <!--Add github url link-->
+            </div>
+
+            <div class="course-col">
+                <h3>Personal Website (HTML/CSS)</h3>
+                <p>Personal website which you are currently viewing that highlights personal interests and hobbies </p>
+                <a href="https://github.com/Mohammadraza23/Personal-Website">Check it Out</a> <!--Add github url link-->
+            </div>
+           
+           
+        </div>
+
+
+<!--Footer might delete-->
+
+<section class="footer">
+
+    <h4>Platforms</h4>
+    <p>Click to find me on these platforms</p>
+<div class="icons">
+    <a href="https://www.facebook.com/profile.php?id=100077405021446"> <i class="fa fa-facebook"></i></a>
+    <a href="https://github.com/Mohammadraza23"> <i class="fa fa-github"></i></a>
+    <a href="https://www.instagram.com/_hasan.r/"> <i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/mohammad-hasan-raza-22739222b/"> <i class="fa fa-linkedin"></i></a>
+   
+</div>
+
+<p>Made with <i class="fa fa-heart-o" ></i> Mohammad Raza </p>
+
+
+</section>
+
+
+
+
+
+<!--javaScript for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>

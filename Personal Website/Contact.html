@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Raza Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/cc0204e73e.js"></script>
+</head>
+<body>
+    <section class="cta">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1>Contact Me</h1>
+
+
+
+    </section>
+
+    <!--- contact me -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.078615230896!2d-75.69820888468642!3d45.38758494657383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d8d37fecc3%3A0xbf5d8d7821b8dcdc!2sCarleton%20University!5e0!3m2!1sen!2sca!4v1642630337700!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact me">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>Carleton University</h5>
+                        <p>Ottawa, Ontario</p>
+
+                    </span>
+
+                </div>
+                <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>647-913-6265</h5>
+                        <p>Brampton, Ontario</p>
+
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope" ></i>
+                    <span>
+                        <h5>razamohammad3@cmail.carleton.ca</h5>
+                        <p>Brampton, Ontario</p>
+
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="contact-col"> 
+
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your name" required>
+                    <input type="email" name="email" placeholder="Enter Email Adress" required>
+                    <textarea rows="6" name="message" placeholder="Message" required></textarea>
+                    <button type=" submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    
+    
+
+<!--Footer might delete-->
+
+<section class="footer">
+
+    <h4>Platforms</h4>
+    <p>Click to find me on these platforms</p>
+<div class="icons">
+    <a href="https://www.facebook.com/profile.php?id=100077405021446"> <i class="fa fa-facebook"></i></a>
+    <a href="https://github.com/Mohammadraza23"> <i class="fa fa-github"></i></a>
+    <a href="https://www.instagram.com/_hasan.r/"> <i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/mohammad-hasan-raza-22739222b/"> <i class="fa fa-linkedin"></i></a>
+   
+
+</div>
+
+<p>Made with <i class="fa fa-heart-o" ></i> by Mohammad Raza </p>
+
+
+</section>
+ 
+
+
+
+
+<!--javaScript for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>

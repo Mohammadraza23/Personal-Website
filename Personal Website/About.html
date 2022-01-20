@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Raza Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/cc0204e73e.js"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1>About Me</h1>
+
+
+
+    </section>
+
+    <!--- about me content-->
+    
+    <section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            
+        <h1>Mohammad Hasan Raza</h1>
+        <p> I am 19 year old South Asian male born in Toronto and raised in Brampton, Ontario.
+             I am currently in my second year pursuing a Bachelor in Computer Science Degree at Carleton University, located in Ottawa. 
+             After taking a computer science course in grade 11 I realized I wanted to pursue a career in it. With technology advancing day to day I plan on leaving an impact even if it is in the smallest way. 
+             Asides from computers and technology, during my free-time I enjoy going outdoors, engaging in a variety of different activities with my friends and family.I am an ambitious 
+            and outgoing individual who loves to have fun.  </p>
+        <a href="" class="hero-btn red-btn" >Explore</a>
+    
+    </div>
+
+        <div class="about-col"> 
+            <img src="pic.jpeg">
+
+        </div>
+
+
+
+    </div>
+</section>
+
+
+<!--Footer might delete-->
+
+<section class="footer">
+
+    <h4>Platforms</h4>
+    <p>Click to find me on these platforms</p>
+<div class="icons">
+    <a href="https://www.facebook.com/profile.php?id=100077405021446"> <i class="fa fa-facebook"></i></a>
+    <a href="https://github.com/Mohammadraza23"> <i class="fa fa-github"></i></a>
+    <a href="https://www.instagram.com/_hasan.r/"> <i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/mohammad-hasan-raza-22739222b/"> <i class="fa fa-linkedin"></i></a>
+   
+   
+   
+
+</div>
+
+<p>Made with <i class="fa fa-heart-o" ></i> by Mohammad Raza </p>
+
+
+</section>
+ 
+
+
+
+
+<!--javaScript for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
